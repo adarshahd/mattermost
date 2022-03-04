@@ -29,7 +29,7 @@ RUN sed -i 's|enabled=0|enabled=1|g' /etc/yum.repos.d/{Rocky-Extras.repo,Rocky-P
 RUN cd /opt \
     && mkdir -p /opt/mattermost/data /opt/mattermost/plugins /opt/mattermost/client/plugins \
     && wget $MM_PACKAGE \
-    && tar -xvf $MM_PACKAGE_NAME \
+    && tar -xzf $MM_PACKAGE_NAME \
     && rm -rf $MM_PACKAGE_NAME
 
 RUN groupadd -g ${PGID} mattermost \
