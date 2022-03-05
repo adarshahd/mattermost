@@ -49,4 +49,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: docker buildx
         run: |
-          docker buildx build . --no-cache --platform arm:linux/arm64 -t "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}" --push
+          docker buildx build . --no-cache --platform linux/arm64 -t "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}" --push
