@@ -4,7 +4,7 @@ FROM --platform=arm64 rockylinux:8
 ENV PATH="/opt/mattermost/bin:${PATH}"
 ARG PUID=2000
 ARG PGID=2000
-ARG MM_VERSION=v7.4.0
+ARG MM_VERSION=v7.5.2
 ARG MM_PACKAGE_NAME="mattermost-${MM_VERSION}-linux-arm64.tar.gz"
 ARG MM_PACKAGE="https://github.com/SmartHoneybee/ubiquitous-memory/releases/download/${MM_VERSION}/mattermost-${MM_VERSION}-linux-arm64.tar.gz"
 
